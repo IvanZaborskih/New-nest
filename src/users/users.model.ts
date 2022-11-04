@@ -19,6 +19,6 @@ export class User extends Model<User, UserCreationAttrs> {
 	@Column({type: DataType.BOOLEAN, defaultValue: false})
 	banned: boolean;
 
-	@Column({type: DataType.STRING, allowNull: false})
+	@Column({type: DataType.STRING, allowNull: true})
 	banReason: string;
 }
